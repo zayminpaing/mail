@@ -2,11 +2,20 @@ In order to use sendMail method, do the followings.
 
 1. Import sendMail method from python file called mail
 
+For Windows,
 from mail import sendMail
+
+For Linux,
+from mail import sendMailLinux
 
 2. Call the method with required parameters
 
-sendMail(fromEmail,fromPassword,subject,contentPath,contentFilename,maillistPath,maillistFilename) where
+For Windows,
+sendMail(fromEmail,fromPassword,subject,contentPath,contentFilename,maillistPath,maillistFilename)
+
+For Linux,
+sendMailLinux(fromEmail,fromPassword,subject,contentPath,contentFilename,maillistPath,maillistFilename) where
+
 fromEmail = sender's email
 fromPassword = sender's password
 subject = email's subject
