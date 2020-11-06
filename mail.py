@@ -14,7 +14,7 @@ def sendMail(fromEmail,fromPassword,subject,contentPath,contentFilename,maillist
     msg['From'] = fromEmail
     msg['Subject'] = subject
     # add in the message body
-    msg.attach(MIMEText("Test\n\n"+getMessage(contentPath,contentFilename), 'plain'))
+    msg.attach(MIMEText(getMessage(contentPath,contentFilename), 'plain'))
     dataFolder = Path(attachmentPath)
     filename = dataFolder/attachmentFilename
     attachment = open(filename, "rb")
@@ -46,7 +46,7 @@ def sendMailLinux(fromEmail,fromPassword,subject,contentPath,contentFilename,mai
     msg['From'] = fromEmail
     msg['Subject'] = subject
     # add in the message body
-    msg.attach(MIMEText("Test\n\n"+getMessageLinux(contentPath,contentFilename), 'plain'))
+    msg.attach(MIMEText(getMessageLinux(contentPath,contentFilename), 'plain'))
     dataFolder = Path(attachmentPath)
     filename = dataFolder/attachmentFilename
     attachment = open(str(filename), "rb")
