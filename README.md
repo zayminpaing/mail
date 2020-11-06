@@ -23,9 +23,9 @@ fromPassword = sender's password
 subject = email's subject
 contentPath = file path to email content (shoule be .txt file)
 contentFilename = name of the .txt file of content
-maillistPath = file path to receivers' email list (shoule be .txt file)
+maillistPath = file path to receivers' email list (shoule be .txt file) (the path should use "/")
 maillistFilename = name of the .txt file of receivers' email list (the emails should be comma seperated in the .txt file)
-attachmentPath = file path to the attachment
+attachmentPath = file path to the attachment (the path should use "/")
 attachmentFilename = name of the attachment file
 
 Please be noted that the sender email used here should be on for allow less secure apps and the google account's reCAPTCHA settings should be off.
