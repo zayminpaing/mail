@@ -21,7 +21,7 @@ sendMailLinux(fromEmail,fromPassword,subject,contentPath,contentFilename,maillis
 fromEmail = sender's email
 fromPassword = sender's password
 subject = email's subject
-contentPath = file path to email content (shoule be .txt file)
+contentPath = file path to email content (shoule be .txt file) (the path should use "/")
 contentFilename = name of the .txt file of content
 maillistPath = file path to receivers' email list (shoule be .txt file) (the path should use "/")
 maillistFilename = name of the .txt file of receivers' email list (the emails should be comma seperated in the .txt file)
