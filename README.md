@@ -1,6 +1,8 @@
 In order to use sendMail method, do the followings.
 
-1. Import sendMail method from python file called mail
+1. Download mail.py and put it in the same directory as your python file.
+
+2. Import sendMail method from python file called mail
 
 For Windows,
 from mail import sendMail
@@ -8,7 +10,7 @@ from mail import sendMail
 For Linux,
 from mail import sendMailLinux
 
-2. Call the method with required parameters
+3. Call the method with required parameters
 
 For Windows,
 sendMail(fromEmail,fromPassword,subject,contentPath,contentFilename,maillistPath,maillistFilename)
